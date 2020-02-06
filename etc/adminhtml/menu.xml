@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magenest_Chapter6::magenest"
+             title="Magenest" module="Magenest_Chapter6"
+             sortOrder="40"
+             translate="title"
+             resource="Magenest_Chapter6::magenest"/>
+        <add id="Magenest_Chapter6::post"
+             title="Manage Posts"
+             module="Magenest_Chapter6"
+             sortOrder="10"
+             action="chapter6/post/grid"
+             translate="title"
+             parent="Magenest_Chapter6::magenest"
+             resource="Magenest_Chapter6::post"/>
+    </menu>
+</config>
